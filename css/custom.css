@@ -6313,8 +6313,11 @@ width: 100%;
 	}
 
 	.topbar{
-        padding: 10px 0;
+        display: none;
     }
+	.hero-content {
+    margin-left: 0px;
+}
 
 	.topbar-contact-info .hide-mobile{
 		display: none;
