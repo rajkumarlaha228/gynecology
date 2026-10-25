@@ -395,7 +395,7 @@ body{
 }
 
 .section-title h2{
-	font-size: 48px;
+	font-size: 40px;
 	font-weight: 700;
 	line-height: 1.1em;
 	margin-bottom: 0;
@@ -643,7 +643,7 @@ header.main-header .header-sticky.active{
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	width: 250px;
+	width: 315px;
 	border-radius: 20px;
 	position: absolute;
 	left: 0;
@@ -1813,7 +1813,7 @@ width: 100%;
 }
 
 .why-choose-item h2{
-	font-size: 48px;
+	font-size: 28px;
 	margin-bottom: 20px;
 }
 
@@ -2991,7 +2991,9 @@ width: 100%;
 	box-shadow: none;
 	padding: 12px 20px;
 }
-
+.breadcrumb-item+.breadcrumb-item::before{
+	display: none;
+}
 .footer-newsletter-form .form-group .form-control::placeholder{
 	color: var(--white-color);
 }
@@ -3084,7 +3086,7 @@ width: 100%;
 }
 
 .page-header-box h1{
-    font-size: 70px;
+    font-size: 47px;
 	color: var(--white-color);
 	margin-bottom: 15px;
 }
@@ -3174,7 +3176,8 @@ width: 100%;
 }
 
 .our-benefits{
-	padding: 100px 0;
+    padding: 100px 0;
+    background: var(--secondary-color);
 }
 
 .benefits-item-box{
@@ -3321,7 +3324,7 @@ width: 100%;
 }
 
 .values-counter-item-content h2{
-	font-size: 48px;
+	font-size: 35px;
 	margin-bottom: 5px;
 	transition: all 0.3s ease-in-out;
 }
@@ -3622,7 +3625,7 @@ width: 100%;
 }
 
 .service-entry h2{
-	font-size: 48px;
+	font-size: 40px;
 	margin-bottom: 20px;
 }
 
@@ -5089,6 +5092,13 @@ width: 100%;
 		margin: 0 20px;
 		border-radius: 30px;
 	}
+
+	.our-benefits {
+    width: calc(100% - 40px);
+    max-width: 100%;
+    margin: 0 20px;
+    border-radius: 30px;
+}
 	
 	.topbar .container-fluid,
 	header.main-header .container-fluid,
@@ -5481,7 +5491,7 @@ width: 100%;
 	}
 
 	.why-choose-item h2{
-		font-size: 36px;
+		font-size: 26px;
 		margin-bottom: 15px;
 	}
 
@@ -5784,7 +5794,7 @@ width: 100%;
 	}
 
 	.page-header-box h1{
-		font-size: 50px;
+		font-size: 40px;
 		margin-bottom: 10px;
 	}
 
@@ -5865,7 +5875,7 @@ width: 100%;
 	}
 
 	.values-counter-item-content h2{
-		font-size: 36px;
+		font-size: 30px;
 	}
 
 	.values-counter-item .icon-box img{
@@ -6500,7 +6510,7 @@ width: 100%;
 	}
 
 	.why-choose-item h2{
-        font-size: 26px;
+        font-size: 20px;
         margin-bottom: 10px;
     }
 
