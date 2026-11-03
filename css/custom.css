@@ -295,7 +295,7 @@ body{
 	margin: 40px auto;
 }
 img.logo {
-    width: 220px;
+    width: 200px;
 }
 .loading{
 	border: 1px solid transparent;
@@ -331,7 +331,6 @@ img.logo {
 	width: 100%;
 	max-width: 1720px;
 	margin: 0 auto;
-	border-radius: 40px;
 }
 
 .section-row{
@@ -389,7 +388,7 @@ img.logo {
 }
 
 .section-title h1{
-	font-size: 58px;
+	font-size: 54px;
 	font-weight: 700;
     line-height: 1.1em;
 	margin-bottom: 0;
@@ -397,7 +396,7 @@ img.logo {
 }
 
 .section-title h2{
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 700;
 	line-height: 1.1em;
 	margin-bottom: 0;
@@ -831,7 +830,7 @@ header.main-header .header-sticky.active{
 	background-position: center center;
 	background-size: cover;
     margin-top: -115px;
-	padding: 200px 0 80px;
+	padding: 140px 0 80px;
 	overflow: hidden;
 }
 
@@ -1000,8 +999,8 @@ header.main-header .header-sticky.active{
 	flex-wrap: wrap;
 	gap: 20px 40px;
 	border-top: 1px solid var(--dark-divider-color);
-	margin-top: 40px;
-	padding-top: 40px;
+	margin-top: 20px;
+	padding-top: 20px;
 }
 
 .hero-body .video-play-button{
@@ -1055,7 +1054,7 @@ header.main-header .header-sticky.active{
 .hero-img img{
 	width: 100%;
 	aspect-ratio: 1 / 1.063;
-	object-fit: cover;
+	object-fit: contain;
 	margin-bottom: -80px;
 }
 
@@ -1416,16 +1415,20 @@ header.main-header .header-sticky.active{
 .service-body .icon-box{
 	margin-bottom: 50px;
 }
-
+.why-choose-item-content {
+    position: relative;
+}
+.icon-box img {
+    width: 26%;
+}
+.icon-box {
+    margin-top: -25px;
+    margin-bottom: 12px;
+}
 .service-body .icon-box img{
 	width: 100%;
-	max-width: 50px;
+	max-width: 70px;
 	transition: all 0.4s ease-in-out;
-}
-
-.service-item.active .service-body .icon-box img,
-.service-item:hover .service-body .icon-box img{
-	filter: brightness(0) invert(1);
 }
 
 .service-content{
@@ -3287,7 +3290,7 @@ width: 100%;
 
 .values-counter-item{
 	position: relative;
-	width: calc(50% - 15px);
+	width: calc(24% - 15px);
 	background: var(--secondary-color);
 	border-radius: 20px;
 	display: flex;
@@ -5043,6 +5046,24 @@ width: 100%;
 	color: var(--text-color);
 }
 
+
+
+/* @media only screen and (max-width: 1720px) {
+    .bg-section-new {
+        width: calc(100% - 40px);
+        max-width: 100%;
+        margin: 0 20px;
+        border-radius: 30px;
+    }
+}
+
+.bg-section-new {
+    width: 100%;
+    max-width: 1720px;
+    margin: 0 auto;
+    border-radius: 40px;
+} */
+
 /************************************/
 /***   35. Book Appointment css	  ***/
 /************************************/
@@ -5088,12 +5109,6 @@ width: 100%;
 
 @media only screen and (max-width: 1720px){
 
-	.bg-section{
-		width: calc(100% - 40px);
-		max-width: 100%;
-		margin: 0 20px;
-		border-radius: 30px;
-	}
 
 	.our-benefits {
     width: calc(100% - 40px);
@@ -5197,11 +5212,6 @@ img.logo {
 		display: none;
 	}
 
-	.bg-section{
-		width: 100%;
-		border-radius: 0;
-		margin: 0;
-	}
 	
 	.section-row{
 		margin-bottom: 40px;
@@ -5220,7 +5230,7 @@ img.logo {
 	}
 
 	.section-title h2{
-		font-size: 36px;
+		font-size: 26px;
 	}
 
 	.section-title p{
