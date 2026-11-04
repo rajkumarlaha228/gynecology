@@ -4410,7 +4410,9 @@ width: 100%;
         bottom: 18px;
         right: 18px;
     }
-
+.faqs-contact-item-box {
+    gap: 51px;
+}
     .floting-button a {
         width: 52px;
         height: 52px;
