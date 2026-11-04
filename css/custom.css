@@ -1422,6 +1422,10 @@ header.main-header .header-sticky.active{
 .icon-box {
     margin-bottom: 12px;
 }
+
+.values-counter-item .icon-box img {
+    width: 35px;
+}
 .service-body .icon-box img{
 	width: 100%;
 	max-width: 70px;
@@ -4360,7 +4364,59 @@ width: 100%;
     font-size: 20px;
     color: var(--accent-color);
 }
+.floting-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 9999;
+}
 
+.floting-button a {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #25D366;
+    color: #fff;
+    font-size: 32px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    animation: whatsappPulse 1.8s infinite;
+    transition: all 0.3s ease;
+}
+
+.floting-button a:hover {
+    background: #128C7E;
+    transform: scale(1.1);
+    color: #fff;
+}
+
+@keyframes whatsappPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+@media (max-width: 576px) {
+    .floting-button {
+        bottom: 18px;
+        right: 18px;
+    }
+
+    .floting-button a {
+        width: 52px;
+        height: 52px;
+        font-size: 28px;
+    }
+}
 .case-study-success-box,
 .case-study-fertility-box,
 .case-study-guide-box{
