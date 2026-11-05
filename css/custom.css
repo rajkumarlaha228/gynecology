@@ -313,7 +313,7 @@ img.logo {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	max-width: 66px;
+	width: 186px;
 	transform: translate(-50%, -50%);
 }
 
@@ -2121,10 +2121,26 @@ width: 100%;
 	padding: 100px 0;
 }
 
-.cta-content-body{
-	display: flex;
-	flex-wrap: wrap;
-	gap: 30px 0;
+.cta-content-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .cta-content-body {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+    .cta-content-body {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
 
 .cta-contact-item{
@@ -4424,7 +4440,9 @@ width: 100%;
 .case-study-guide-box{
 	margin-top: 60px;
 }
-
+.cta-contact-item-content span {
+    color: #ff70a3;
+}
 .case-study-success-list{
 	display: flex;
 	flex-wrap: wrap;
@@ -6641,10 +6659,6 @@ img.logo {
 	.pricing-benefit-list ul li img{
 		max-width: 16px;
 		margin-right: 5px;
-	}
-
-	.cta-content-body{
-		display: block;
 	}
 
 	.cta-contact-item{
